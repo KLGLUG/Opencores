@@ -16,7 +16,7 @@ Note: To install iverilog in specific directory use
 
 Method-2:
 
-add the given lines in /etc/apt/soorces.list
+add the given lines in /etc/apt/sources.list
 	deb http://archive.ubuntu.com/ubuntu/ edgy universe
 	deb-src http://archive.ubuntu.com/ubunty/ edgy universe
 Then run the following commands
