@@ -1,0 +1,21 @@
+#! /usr/local/bin/vvp
+:ivl_version "0.9.7 " "(v0_9_7)";
+:vpi_time_precision + 0;
+:vpi_module "system";
+:vpi_module "v2005_math";
+:vpi_module "va_math";
+S_0x556763d4ff40 .scope module, "HalfAdder" "HalfAdder" 2 1;
+ .timescale 0 0;
+L_0x556763da7100/d .functor XOR 1, C4<z>, C4<z>, C4<0>, C4<0>;
+L_0x556763da7100 .delay (3,3,3) L_0x556763da7100/d;
+L_0x556763da7250/d .functor AND 1, C4<z>, C4<z>, C4<1>, C4<1>;
+L_0x556763da7250 .delay (6,6,6) L_0x556763da7250/d;
+v0x556763d50030_0 .net "A", 0 0, C4<z>; 0 drivers
+v0x556763da6f10_0 .net "B", 0 0, C4<z>; 0 drivers
+v0x556763da6fb0_0 .net "Carry", 0 0, L_0x556763da7250; 1 drivers
+v0x556763da7050_0 .net "Sum", 0 0, L_0x556763da7100; 1 drivers
+# The file index is used to find the file name in the following table.
+:file_names 3;
+    "N/A";
+    "<interactive>";
+    "HalfAdder.v";
